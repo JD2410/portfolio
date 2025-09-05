@@ -4,3 +4,9 @@ This is my personal portfolio website, showcasing my professional experience, pr
 The site is hosted on **GitHub Pages**.
 
 ## Tech Stack ##
+
+* ⚛️ React – Component-based UI development
+* 🎨 Tailwind CSS – Utility-first styling
+* 📄 JSX – Declarative UI structure
+* 🌐 JavaScript (ES6+) – Core scripting
+* 🖌️ CSS – Custom styling where needed
