@@ -68,7 +68,7 @@ const Projects = () => {
                 </div>
                 <div className="col-span-2">
                     <h3>Publishing Company – Label Generator Tool (Lion)</h3>
-                    <p>For a publishing company, I developed a standalone tool to automate the creation of address labels from CSV files. Previously, staff had to re-enter data manually, a time-consuming and error-prone process. The web-based system, hosted locally on their machine, allowed them to upload CSV files, review a summary of the data, and generate formatted labels ready for printing on standard Avery sheets. By removing the need for internet access or third-party tools, this project streamlined a repetitive task, improved accuracy, and delivered a simple, efficient offline solution.</p>
+                    <p>For a publishing company, I developed a standalone tool to automate the creation of address labels from CSV files directly from the order section of their website. Previously, staff had to re-enter data manually, a time-consuming and error-prone process. The web-based system, hosted locally on their machine, allowed them to upload CSV files, review a summary of the data, and generate formatted labels ready for printing on standard Avery sheets. By removing the need for internet access or third-party tools, this project streamlined a repetitive task, improved accuracy, and delivered a simple, efficient offline solution.</p>
                     <div className="pt-3 pb-3">
                         <a href="#" target="_blank" className="bg-blue-500 hover:bg-blue-400 text-white rounded-3xl pt-1 pb-1 pl-3 pr-3">View GitHub Repo</a>
                     </div>

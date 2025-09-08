@@ -21,7 +21,7 @@ const Experience = () => {
             <article className="pb-4 pt-4">
                 <div>Feb 2023 - Apr 2024</div>
                 <h3>Senior Graphic Designer</h3>
-                <p>Designed creative assets while collaborating with the Product Owner to develop new features. Created wireframes, visual designs, and detailed specifications for handoff to development teams across multiple products, ensuring clarity, usability, and alignment with project goals. Along with my graphic design role I would also by leading research into the market and assesing the landscape in comparison with the current products. Offering suggestions for new features and assessing where the product sat in the market</p>
+                <p>Designed creative assets while collaborating with the Product Owner to develop new features. Created wireframes, visual designs, and detailed specifications for handoff to development teams across multiple products, ensuring clarity, usability, and alignment with project goals. Along with my graphic design role, I was leading research into the market and assesing the landscape in comparison with the current products. Offering suggestions for new features and assessing where the product sat in the market</p>
                 <ul className="flex flex-wrap gap-4 p-3 text-center">
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Scrum Master & Agile Planning</li>
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Project Management</li>
@@ -38,7 +38,7 @@ const Experience = () => {
             <article className="pb-4 pt-4">
                 <div>Apr 2019 - Feb 2023</div>
                 <h3>Graphic Designer & Developer</h3>
-                <p>Primary responsibility was designing the general look and feel of the new products and new features for teh existing products. Maintaining all my responsibilities as a front end developer and heping the junior members of the team climitise to the new applications and assitsting in code reviews for any front end development. </p>
+                <p>Primary responsibility was designing the general look and feel of the new products and new features for the existing products. Maintaining all my responsibilities as a front end developer and heping the junior members of the team climatise to the new applications and assisting in code reviews for any front end development. </p>
                 <ul className="flex flex-wrap gap-4 p-3 text-center">
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Junior Developer Oversight</li>
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Product Owner Collaboration</li>
@@ -51,7 +51,7 @@ const Experience = () => {
             <article className="pb-4 pt-4">
                 <div>Sep 2017 - Apr 2019</div>
                 <h3>Front End Developer</h3>
-                <p>Responsible for managing and developing marketing website both in Wordpress and MVC application. Implementing new features within the application implementing new libraries and business logic. Was responsible for keep track in my time within the ticketing system (bespoke application just called the intranet). Implementing bespoke website designs for clients' marketing based on an existing bespoke CMS system.</p>
+                <p>Responsible for managing and developing marketing websites both in Wordpress and MVC application. Implementing new features within the application implementing new libraries and business logic. Using a bespoke internal ticketing system to manage my time kept all tasks on schedule. Implementing bespoke website designs for clients' marketing based on an existing bespoke CMS system.</p>
                 <ul className="flex flex-wrap gap-4 p-3 text-center">
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Time Management</li>
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">HTML</li>
@@ -69,7 +69,7 @@ const Experience = () => {
             <article className="pb-4 pt-4 text-center">
                 <div>Sep 2017 - Apr 2019</div>
                 <h3>Web Developer / Videographer / Content Administrator</h3>
-                <p>Responsible for various tasks but focused primarily on web development of the B2C website and content administration of the B2B website. Producing promotional videos for web, YouTube and in-store marketing. I’m also responsible for researching and implementing any and all digital media initiatives.</p>
+                <p>Responsible for various tasks but focused primarily on web development of the B2C website and content administration of the B2B website. Producing promotional videos for web, YouTube and in-store marketing. My resposibilities included: researching and implementing any and all digital media initiatives.</p>
                 <ul className="flex flex-wrap gap-4 p-3 text-center">
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Website Usability, SEO & Browser Compatibility</li>
                     <li className="border-blue-400 border-2 pt-1 pb-1 pl-3 pr-3 rounded-3xl">Site Testing, Debugging & Error Resolution</li>
