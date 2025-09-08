@@ -1,14 +1,21 @@
+import FourthGen from './assets/fourth-gen-decorating.png';
+import Christopher from './assets/christopher-william-building-solutions.png'
+import Ultra from './assets/ultra-hr.png'
+import RetailReport from './assets/retail-report.png'
+import Itvet from './assets/itvet.png'
+import Horizonhobby from './assets/horizonhobby.png'
+
 const Projects = () => {
     return (
         <>
          <section className="max-w-6xl p-4 flex flex-col gap-3">
             <h1 className="text-center">Projects Personal and Commercial</h1>
             <p className="text-center">Here are some of the projects I’ve been apart of over the years. Along with some of my personal projects to sharpen and build my skillset.</p>
-            <article className="grid grid-cols-3 mb-10">
-                <div>
-                    Picture of 4th Generation Website
+            <article className="grid grid-cols-9 gap-8 mb-10 items-center">
+                <div className="col-span-3">
+                    <img src={FourthGen} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-6">
                     <h3>4th Generation Decorating</h3>
                     <p>For this project, I designed and developed a WordPress website for a father-and-son painting and decorating business. Starting with agreed wireframes, I created a clean, bright design that captured their brand identity. WordPress provided the flexibility for them to update their own content, including galleries and contact details, without relying on ongoing support. To keep the build efficient and easy to maintain, I used SCSS for styling and chose InfinityFree as a cost-effective hosting solution. The contact form was set up with Contact Form 7 and integrated with Brevo to ensure reliable email delivery.</p>
                     <div className="flex flex-wrap gap-3 pt-3 pb-3">
@@ -35,9 +42,9 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
                 <div>
-                    Picture of Christopher William website
+                    <img src={Christopher} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
                 <div className="col-span-2">
                     <h3>Christopher William - Building Solutions</h3>
@@ -62,7 +69,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10">
+            <article className="grid grid-cols-3 mb-10 content-center">
                 <div>
                     Picture of Lion
                 </div>
@@ -81,9 +88,9 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
                 <div>
-                    Picture of Ultra HR Application
+                    <img src={Ultra} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
                 <div className="col-span-2">
                     <h3>Ultra HR - HR Management System</h3>
@@ -100,9 +107,9 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
                 <div>
-                    Picture of Retail Report Website
+                    <img src={RetailReport} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
                 <div className="col-span-2">
                     <h3>Retail Report - Application</h3>
@@ -126,9 +133,9 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
                 <div>
-                    Picture of ITVET website when I was developing
+                    <img src={Itvet} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
                 <div className="col-span-2">
                     <h3>ITVET</h3>
@@ -146,9 +153,9 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
                 <div>
-                    Picture of HH UK Website
+                    <img src={Horizonhobby} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
                 <div className="col-span-2">
                     <h3>Horizon Hobby UK</h3>
