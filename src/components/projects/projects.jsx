@@ -8,10 +8,10 @@ import Horizonhobby from './assets/horizonhobby.png'
 const Projects = () => {
     return (
         <>
-         <section className="max-w-6xl p-4 flex flex-col gap-3">
+         <section className=" p-4 flex flex-col gap-3 items-center">
             <h1 className="text-center">Projects Personal and Commercial</h1>
             <p className="text-center">Here are some of the projects I’ve been apart of over the years. Along with some of my personal projects to sharpen and build my skillset.</p>
-            <article className="grid grid-cols-9 gap-8 mb-10 items-center">
+            <article className="grid grid-cols-9 gap-8 mb-10 max-w-6xl">
                 <div className="col-span-3">
                     <img src={FourthGen} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
@@ -42,7 +42,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
                 <div>
                     <img src={Christopher} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
@@ -69,7 +69,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 mb-10 content-center">
+            <article className="grid grid-cols-3 mb-10 content-center max-w-6xl">
                 <div>
                     Picture of Lion
                 </div>
@@ -88,7 +88,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
                 <div>
                     <img src={Ultra} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
@@ -107,7 +107,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
                 <div>
                     <img src={RetailReport} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
@@ -133,7 +133,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
                 <div>
                     <img src={Itvet} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>
@@ -153,7 +153,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </article> 
-            <article className="grid grid-cols-3 gap-8 mb-10 items-center">
+            <article className="grid grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
                 <div>
                     <img src={Horizonhobby} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
                 </div>

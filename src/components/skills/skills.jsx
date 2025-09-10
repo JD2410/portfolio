@@ -41,9 +41,10 @@ const Skills = () => {
     ]
     return (
         <>
+        <section className="flex flex-col items-center">
             <h1 className="text-center">Skills & Tools</h1>
             <p className="text-center">Refined and developed over the years. Here are the languages, skills and tools I know.</p>
-            <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-5 p-4">
+            <ul className="max-w-6xl grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-5 p-4">
                 {skillsList.map((element, index) => {
                     const IconComponent = element[1];
                     if (typeof element[1] === "function") {
@@ -73,6 +74,8 @@ const Skills = () => {
                 })
             }
             </ul>
+        </section>
+            
             
         </>
     )

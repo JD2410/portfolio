@@ -1,11 +1,11 @@
 const Experience = () => {
     return (
         <>
-        <section className="max-w-6xl p-4 flex flex-col gap-3">
+        <section className="p-4 flex flex-col gap-3 items-center">
             <h1 className="text-center">Experience</h1>
             <p className="text-center">Where I’ve been and the skills and tools I’ve learnt</p>
             <h2>ITVET - Technology Solutions<span>2017 - 2025</span></h2>
-            <article className="pb-8">
+            <article className="pb-8 max-w-6xl">
                 <div>Apr 2024 - Feb 2025</div>
                 <h3>Product Manager/Owner</h3>
                 <p>Translated client requirements into actionable plans and coordinated timelines and specifications with the development team. Collaborated with the admin team to align expectations, minimize scope creep, and maintain cohesion between teams. Presented new ideas and development strategies to the company, supporting both project success and long-term growth initiatives.</p>
@@ -18,7 +18,7 @@ const Experience = () => {
                 </ul>
             </article>
             <hr />
-            <article className="pb-4 pt-4">
+            <article className="pb-4 pt-4 max-w-6xl">
                 <div>Feb 2023 - Apr 2024</div>
                 <h3>Senior Graphic Designer</h3>
                 <p>Designed creative assets while collaborating with the Product Owner to develop new features. Created wireframes, visual designs, and detailed specifications for handoff to development teams across multiple products, ensuring clarity, usability, and alignment with project goals. Along with my graphic design role, I was leading research into the market and assesing the landscape in comparison with the current products. Offering suggestions for new features and assessing where the product sat in the market</p>
@@ -35,7 +35,7 @@ const Experience = () => {
                 </ul>
             </article>
             <hr />
-            <article className="pb-4 pt-4">
+            <article className="pb-4 pt-4 max-w-6xl">
                 <div>Apr 2019 - Feb 2023</div>
                 <h3>Graphic Designer & Developer</h3>
                 <p>Primary responsibility was designing the general look and feel of the new products and new features for the existing products. Maintaining all my responsibilities as a front end developer and heping the junior members of the team climatise to the new applications and assisting in code reviews for any front end development. </p>
@@ -48,7 +48,7 @@ const Experience = () => {
                 </ul>
             </article>
             <hr />
-            <article className="pb-4 pt-4">
+            <article className="pb-4 pt-4 max-w-6xl">
                 <div>Sep 2017 - Apr 2019</div>
                 <h3>Front End Developer</h3>
                 <p>Responsible for managing and developing marketing websites both in Wordpress and MVC application. Implementing new features within the application implementing new libraries and business logic. Using a bespoke internal ticketing system to manage my time kept all tasks on schedule. Implementing bespoke website designs for clients' marketing based on an existing bespoke CMS system.</p>
@@ -66,7 +66,7 @@ const Experience = () => {
                 </ul>
             </article>
             <h2 className="text-center">Horizonhobby UK<span>2006 - 2017</span></h2>
-            <article className="pb-4 pt-4 text-center">
+            <article className="pb-4 pt-4 max-w-6xl">
                 <div>Sep 2017 - Apr 2019</div>
                 <h3>Web Developer / Videographer / Content Administrator</h3>
                 <p>Responsible for various tasks but focused primarily on web development of the B2C website and content administration of the B2B website. Producing promotional videos for web, YouTube and in-store marketing. My resposibilities included: researching and implementing any and all digital media initiatives.</p>

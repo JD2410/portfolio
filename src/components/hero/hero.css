@@ -1,0 +1,6 @@
+.hero {
+    background: url("assets/lower-footer.svg"), linear-gradient(45deg, #56CCF2, #2F80ED);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+}
