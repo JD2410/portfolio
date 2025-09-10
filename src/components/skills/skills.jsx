@@ -4,6 +4,13 @@ import { DiJqueryLogo, DiScrum } from "react-icons/di";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { SiAdobe, SiAffinitydesigner } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
+import Scrum from './assets/scrum.svg';
+import Graphicdesign from './assets/graphic-design.svg';
+import Productownership from './assets/product-ownership.svg';
+import Responsive from './assets/responsive.svg';
+import Uidesign from './assets/ui-design.svg';
+import Webdevelopment from './assets/web-development.svg';
+import Wireframing from './assets/wireframing.svg';
 
 const Skills = () => {
     const skillsList = [
@@ -16,37 +23,53 @@ const Skills = () => {
         ["Bootstrap", BsFillBootstrapFill],
         ["React", FaReact],
         ["Git", FaGit],
-        ["GitHub", FaGithub],
+        ["GitHub", FaGithub],   
         ["WordPress", FaWordpress],
         ["SEO", FaHtml5],
-        ["Agile", FaHtml5],
-        ["SCRUM", DiScrum],
+        ["Agile", DiScrum],
+        ["SCRUM", Scrum],
         ["Figma", FaFigma],
         ["Adobe Suite", SiAdobe],
         ["Affinity Studio", SiAffinitydesigner],
-        ["Wireframing", FaHtml5],
-        ["Graphic Design", FaHtml5],
-        ["Responsive Web Design", FaHtml5],
-        ["UI Design", FaHtml5],
-        ["Web Development", FaHtml5],
+        ["Wireframing", Wireframing],
+        ["Graphic Design", Graphicdesign],
+        ["Responsive Web Design", Responsive],
+        ["UI Design", Uidesign],
+        ["Web Development", Webdevelopment],
         ["Netlify", BiLogoNetlify],
-        ["Product Ownership", FaHtml5],
+        ["Product Ownership", Productownership],
     ]
     return (
         <>
             <h1 className="text-center">Skills & Tools</h1>
             <p className="text-center">Refined and developed over the years. Here are the languages, skills and tools I know.</p>
-            <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-5 text-center p-4">
+            <ul className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 gap-5 p-4">
                 {skillsList.map((element, index) => {
                     const IconComponent = element[1];
+                    if (typeof element[1] === "function") {
+                        return (
+                            <li key={index} className="lg:h-[140px] lg:w-[140px] p-2 bg-gray-100 rounded-lg text-center hover:[transform:perspective(800px)_rotateY(-30deg)] group duration-300">
+                                <span>
+                                    <span className="flex h-[100px] items-center justify-center duration-300 group-hover:-translate-x-4">
+                                        <IconComponent size={68} />
+                                    </span>
+                                    <div className="truncate w-[100%]">{element[0]}</div>
+                                </span>
+                            </li>
+                        )
+                    }
+
                     return (
-                        <li key={index} className="lg:h-[140px] lg:w-[140px] p-2 bg-gray-100 rounded-lg text-center">
+                        <li key={index} className="lg:h-[140px] lg:w-[140px] p-2 bg-gray-100 rounded-lg text-center hover:[transform:perspective(800px)_rotateY(-30deg)] group duration-300">
                             <span>
-                                <IconComponent size={60} />
-                                <span>{element[0]}</span>
+                                <span className="flex h-[100px] items-center justify-center duration-300 group-hover:-translate-x-4">
+                                    <img src={element[1]} alt="" />
+                                </span>
+                                <div className="truncate w-[100%]">{element[0]}</div>
                             </span>
                         </li>
                     )
+                    
                 })
             }
             </ul>
