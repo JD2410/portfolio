@@ -1,6 +1,33 @@
-.hero {
-    background: url("assets/lower-footer.svg"), linear-gradient(45deg, #56CCF2, #2F80ED);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100% auto;
+
+@media (min-width: 1024px) {
+    .hero {
+        background:
+        url('assets/circular-pattern.svg') calc(50% + 250px) -60px no-repeat,
+        url('assets/lower-footer.svg') center 100% repeat-x,
+        url('assets/lower-footer.svg') center 100% repeat-x,
+        linear-gradient(45deg, #56cbf298 0%, #2F80ED 90%),
+        url('assets/lines-large-backing.png') bottom right,
+        linear-gradient(45deg, #56CCF2, #2F80ED);
+        background-size: 900px, auto, auto, auto, auto, auto;
+    }
+}
+@media (max-width: 1024px) and (min-width: 640px) {
+    .hero {
+        background:
+        url('assets/lower-footer.svg') center 100% repeat-x,
+        linear-gradient(45deg, #56cbf298 0%, #2F80ED 90%),
+        url('assets/lines-large-backing.png') bottom right,
+        linear-gradient(45deg, #56CCF2, #2F80ED);
+        background-size: 120%, auto, auto, auto, auto, auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        background:
+        linear-gradient(45deg, #56cbf298 0%, #2F80ED 90%),
+        url('assets/lines-large-backing.png') bottom right,
+        linear-gradient(45deg, #56CCF2, #2F80ED);
+        background-size: auto, auto, auto;
+    }
 }

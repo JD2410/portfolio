@@ -5,3 +5,8 @@
   --font-display: "Open Sans", sans-serif; 
   --font-outfit: "Outfit", sans-serif;
 }
+
+body {
+  background: url("./assets/background.svg") repeat-y 700px center,
+   url("./assets/background.svg") repeat-y top center;
+}
