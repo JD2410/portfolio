@@ -6,9 +6,12 @@
     border: 3px solid #F9B300;
     background-color: #fff;
     position: absolute;
-    left: calc(50% - 15px);
+    
     top: 0;
     z-index: 5;
+}
+.timeline-indi.hhuk { 
+    left: calc(50% - 15px);
 }
 .timeline-indi:before {
     left: calc(50% - 10px);
@@ -21,14 +24,19 @@
     border-radius: 50%;
     position: absolute;
 }
-.experience-list:after {
-    content: "";
-    width: 3px;
-    background-color: rgb(41, 41, 41);
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    display: block;
-    z-index: 0;
+@media (min-width: 768px) {
+    .timeline-indi { 
+        left: calc(50% - 15px);
+    }
+    .experience-list:after {
+        content: "";
+        width: 3px;
+        background-color: rgb(41, 41, 41);
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        display: block;
+        z-index: 0;
+    }
 }
