@@ -4,6 +4,7 @@ import Ultra from './assets/ultra-hr.png'
 import RetailReport from './assets/retail-report.png'
 import Itvet from './assets/itvet.png'
 import Horizonhobby from './assets/horizonhobby.png'
+import LabelMaker from './assets/label-maker.png'
 import ProjectDisplay from './project';
 
 const Projects = () => {
@@ -32,7 +33,7 @@ const Projects = () => {
         },
         {
             name: "Publishing Company – Label Generator Tool (Lion)",
-            image: Christopher,
+            image: LabelMaker,
             description: "For a publishing company, I developed a standalone tool to automate the creation of address labels from CSV files directly from the order section of their website. Previously, staff had to re-enter data manually, a time-consuming and error-prone process. The web-based system, hosted locally on their machine, allowed them to upload CSV files, review a summary of the data, and generate formatted labels ready for printing on standard Avery sheets. By removing the need for internet access or third-party tools, this project streamlined a repetitive task, improved accuracy, and delivered a simple, efficient offline solution.",
             skills: ["Web Design", "jQuery", "HTML", "CSS"],
             github: "https://www.4thgendecorating.co.uk"
