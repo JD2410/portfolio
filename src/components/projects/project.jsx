@@ -2,11 +2,11 @@
 const project = (prop) => {
     return (
         <>
-        <article className="grid grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
+        <article className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10 items-center max-w-6xl">
             <div>
-                <img src={prop.project.image} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl' />
+                <img src={prop.project.image} alt="" className='drop-shadow-lg overflow-hidden rounded-1xl w-[100%] h-[150px] object-cover object-top-left sm:w-auto sm:h-auto' />
             </div>
-            <div className="col-span-2">
+            <div className="sm:col-span-2">
                 <h3 className="text-xl font-bold mb-1 text-left">{prop.project.name}</h3>
                 <p className="leading-[1.8rem] text-gray-700" >{prop.project.description}</p>
                 <div className="flex flex-wrap gap-3 pt-3 pb-3">

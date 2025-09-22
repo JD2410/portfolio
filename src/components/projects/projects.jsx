@@ -58,10 +58,20 @@ const Projects = () => {
             },
         },
         {
+            name: "ITVET",
+            image: Itvet,
+            description: "At ITVET, I developed and maintained the company’s marketing website on the WordPress platform, working with the marketing team to optimise usability and SEO. Beyond day-to-day updates, I created a custom plugin that integrated with the Ultra HR recruitment module. This allowed job listings to be published directly on the site, each with its own tailored application form. Applicants could also update submissions post-application, improving the user experience. The project balanced technical development with cross-department collaboration, ensuring the site supported both marketing and HR goals.",
+            skills: ["Responsive Design", "Wordpress", "WordPress Plugin Development", "API Integration", "jQuery", "HTML", "CSS"],
+            website: { 
+                url: "#",
+                active: false
+            },
+        },
+        {
             name: "Horizon Hobby UK",
             image: Horizonhobby,
             description: "At Horizon Hobby UK, I managed the development and maintenance of their flat-file marketing website for premium RC products. I introduced forward-looking practices at the time, such as responsive design and SEO optimisation, ensuring the site kept pace with emerging trends. My role also included building new sections, fixing bugs, and streamlining maintenance. Working with graphic designers, I integrated social media platforms and supported marketing with YouTube sizzle videos. I also implemented Google Analytics to track user journeys and guide future improvements",
-            skills: ["Website Usability, SEO & Browser Compatibility", "Site Testing, Debugging & Error Resolution", "WordPress Plugin Development", "Front-End Development (HTML, CSS, JavaScript)", "jQuery", "Designer & Developer Collaboration"],
+            skills: ["Website Usability, SEO & Browser Compatibility", "Site Testing, Debugging & Error Resolution", "Front-End Development (HTML, CSS, JavaScript)", "jQuery", "Designer & Developer Collaboration"],
             website: { 
                 url: "#",
                 active: false
@@ -73,7 +83,7 @@ const Projects = () => {
         <>
          <section className=" p-4 flex flex-col gap-3 items-center">
             <h1 className="text-center text-4xl font-bold">Projects Personal and Commercial</h1>
-            <hr className="hr-underline mt-6 mb-6 min-w-[580px] rounded-sm" />
+            <hr className="hr-underline mt-6 mb-6 w-[100%] lg:max-w-[580px] rounded-sm" />
             <p className="text-center leading-[1.8rem] text-gray-700 pl-2 pr-2">Here are some of the projects I’ve been apart of over the years in either front end development, project management or UI/UX Design aspect. Along with some of my personal projects to sharpen and build my skillset.</p>
             {projectDetails.map((ele, index) => (
                 <ProjectDisplay project={ele} key={index}></ProjectDisplay>

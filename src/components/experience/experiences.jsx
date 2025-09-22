@@ -30,21 +30,23 @@ const Experience = () => {
     return (
         <>
         <section className="p-4 flex flex-col gap-3 items-center">
-            <h1 className="text-center text-4xl font-bold">Experience</h1>
-            <hr className="hr-underline mt-6 mb-6 min-w-[200px] rounded-sm" />
-            <p className="text-center mb-4">Where I’ve been and the skills and tools I’ve learnt</p>
-            <h2 className="text-center text-2xl font-bold mb-8">ITVET - Technology Solutions<span className="block font-normal text-xl text-center">2017 - 2025</span></h2>
+            <h1 className="text-left text-2xl md:text-4xl w-[100%] sm:w-auto sm:text-center font-bold">Experience</h1>
+            <hr className="hr-underline mt-1 mb-1 sm:mt-5 sm:mb-5 w-[100%] sm:max-w-[200px] rounded-sm" />
+            <p className="text-left w-[100%] sm:w-auto sm:text-center mb-4 ">Where I’ve been and the skills and tools I’ve learnt</p>
+            <h2 className="w-[100%] sm:w-quto text-center text-lg sm:text-2xl font-bold mb-4 sm:mb-8">ITVET - Technology Solutions<span className="block font-normal sm:text-xl">2017 - 2025</span></h2>
             <div className="max-w-6xl experience-list relative">
                 {exp.map((ele, index) => (
-                    <Exp key={index} experience={ele} which={index}></Exp>
+                    <Exp key={index} experience={ele} which={index % 2 == 0 ? 1 : 0}></Exp>
                 ))}
-            <div className='relative'>
-                <div className="timeline-indi hhuk"></div>
+            
             </div>
-            </div>
-            <h2 className="text-center text-2xl font-bold mt-8">Horizon Hobby UK<span className="block font-normal text-xl text-center">2006 - 2017</span></h2>
-            <article className="pb-4 max-w-6xl text-center w-3xl">
-                <div className="blue-gradient text-white pt-1 pr-3 pb-1 pl-3 rounded-2xl text-sm mb-8 inline-block">Sep 2017 - Apr 2019</div>
+            <h2 className="w-[100%] sm:w-quto text-center text-lg sm:text-2xl font-bold sm:mt-8">Horizon Hobby UK<span className="block font-normal sm:text-xl sm:text-center">2006 - 2017</span></h2>
+            <article className="pb-4 max-w-6xl text-left sm:text-center lg:w-3xl">
+                <div className="blue-gradient text-white pt-1 pr-3 pb-1 pl-3 rounded-2xl text-sm mb-3 sm:mb-8 ml-9 sm:ml-0 inline-block">Sep 2017 - Apr 2019</div>
+                <div className='relative'>
+                    <div className="timeline-indi hhuk top-[-40px] sm:top-[-200px]" ></div>
+                </div>
+
                 <h3 className="text-xl font-bold mb-1">Web Developer / Videographer / Content Administrator</h3>
                 <p className='pb-4 leading-[1.8rem] text-gray-700'>Responsible for various tasks but focused primarily on web development of the B2C website and content administration of the B2B website. Producing promotional videos for web, YouTube and in-store marketing. My resposibilities included: researching and implementing any and all digital media initiatives.</p>
                 <ul className="flex flex-wrap gap-3 justify-center">
