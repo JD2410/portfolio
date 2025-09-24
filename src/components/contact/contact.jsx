@@ -6,8 +6,27 @@ const Contact = () => {
     const [message, setMessage] = useState("");
     const [result, setResult] = useState("");
 
-    const submitHandler = async (e) => {
-        e.preventDefault();
+    const submitHandler = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "3a0883f7-cd78-4779-85f9-1b8d217f12d3");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
 
     }
     return (
@@ -29,8 +48,16 @@ const Contact = () => {
                 <form onSubmit={submitHandler} className="flex flex-col gap-3">
                     <h3 className="text-2xl font-bold mb-1 text-left">Drop me a line</h3>
                     <p className="leading-[1.8rem] text-gray-700 mb-3">Fill out the form below and I’ll get back to you asap!</p>
-                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="border-1 pt-1 pb-1 pl-2 pr-2 mb-3 rounded-sm bg-white" placeholder="Email" />
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="border-1 h-[250px] pt-1 pb-1 pl-2 pr-2 rounded-sm bg-white" placeholder="Message"></textarea>
+                    <input 
+                        type="text" 
+                        name="email"
+                        className="border-1 pt-1 pb-1 pl-2 pr-2 mb-3 rounded-sm bg-white" 
+                        placeholder="Email" />
+                    <textarea 
+                        name="message" 
+                        className="border-1 h-[250px] pt-1 pb-1 pl-2 pr-2 rounded-sm bg-white" 
+                        placeholder="Message"
+                    ></textarea>
                     <button type="submit" className="border">Send</button>
                 </form>
                 <span>{result}</span>
