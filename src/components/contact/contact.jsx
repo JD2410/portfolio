@@ -8,25 +8,7 @@ const Contact = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        setResult("Sending....");
-        const formData = new FormData(e.target);
 
-        formData.append("access_key", "3a0883f7-cd78-4779-85f9-1b8d217f12d3");
-
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            setResult("Form Submitted Successfully");
-            e.target.reset();
-        } else {
-            console.log("Error", data);
-            setResult(data.message);
-        }
     }
     return (
         <section className="flex flex-col items-center pl-4 sm:pl-0 pr-4 sm:pr-0">
