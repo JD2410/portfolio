@@ -7,6 +7,8 @@ import Skills from './components/skills/skills.jsx';
 import About from './components/about/about.jsx';
 import Experience from './components/experience/experiences.jsx';
 import Projects from './components/projects/projects.jsx';
+import Contact from './components/contact/contact.jsx'
+import Footer from './components/footer/footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,5 +18,7 @@ createRoot(document.getElementById('root')).render(
     <About />
     <Experience />
     <Projects />
+    <Contact />
+    <Footer />
   </StrictMode>,
 )

@@ -18,7 +18,7 @@ const Projects = () => {
                 url: "https://www.4thgendecorating.co.uk",
                 active: true
             },
-            github: "https://www.4thgendecorating.co.uk"
+            github: "https://github.com/JD2410/fourth-generation-decoration"
         },
         {
             name: "Christopher William - Building Solutions",
@@ -26,17 +26,17 @@ const Projects = () => {
             description: "For Christopher William Building Solutions, I designed a website and full brand identity from the ground up. With no existing assets, I created a traditional look using clean fonts and a red-and-black colour scheme, paired with architectural motifs to reflect their bespoke work. I also designed the logo, inspired by architectural plans, to strengthen the professional tone. The site was built as a flat-file website, hosted on Netlify for simplicity, with an external service handling the contact form and reCAPTCHA security. Special attention was given to metadata to ensure the site displayed cleanly when saved to a mobile home screen.",
             skills: ["Graphic Design", "Web Design", "Responisve Web Design", "Javascript", "HTML", "CSS", "Netlify", "DNS Management", "Figma", "Git", "GitHub"],
             website: { 
-                url: "https://www.4thgendecorating.co.uk",
+                url: "https://cwbuilding-solutions.co.uk",
                 active: true
             },
-            github: "https://www.4thgendecorating.co.uk"
+            github: "https://github.com/JD2410/Christopher-Willliam-Website"
         },
         {
             name: "Publishing Company – Label Generator Tool (Lion)",
             image: LabelMaker,
             description: "For a publishing company, I developed a standalone tool to automate the creation of address labels from CSV files directly from the order section of their website. Previously, staff had to re-enter data manually, a time-consuming and error-prone process. The web-based system, hosted locally on their machine, allowed them to upload CSV files, review a summary of the data, and generate formatted labels ready for printing on standard Avery sheets. By removing the need for internet access or third-party tools, this project streamlined a repetitive task, improved accuracy, and delivered a simple, efficient offline solution.",
             skills: ["Web Design", "jQuery", "HTML", "CSS"],
-            github: "https://www.4thgendecorating.co.uk"
+            github: "https://github.com/JD2410/Address-Label-Generator"
         },
         {
             name: "Ultra HR - HR Management System",
@@ -54,7 +54,7 @@ const Projects = () => {
             description: "Retail Report was a management tool for shopping centres, designed to provide insights and practical tools for day-to-day operations. I began as a front-end developer, building new features, maintaining the codebase, and fixing issues. Over time, I worked with the product manager to design client-specific tools, ensuring requirements were met and workflows were efficient. Later, I shifted into a strategic role, creating product roadmaps, estimating development timelines, and presenting future plans at internal events. I also supported sales and stakeholder discussions by aligning technical feasibility with business goals.",
             skills: ["Leadership", "Team Development", "Application Scoping & Planning", "Cross-Department Collaboration", "ISO Policy Development", "Department System Development", "Web Design", "Responsive Design", "jQuery", "HTML", "CSS"],
             website: { 
-                url: "#",
+                url: "https://retailreport.com",
                 active: true
             },
         },
