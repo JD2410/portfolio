@@ -1,17 +1,22 @@
 import { useState } from "react";
 import { FaEnvelope, FaLinkedin, FaGithub, FaMapPin } from "react-icons/fa";
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [result, setResult] = useState("");
+    const [hcap, setHcap] = useState("");
 
+    const onHCaptchaChange = (token) => {
+        setHcap(token);
+    };
     const submitHandler = async (event) => {
         event.preventDefault();
         setResult("Sending....");
         const formData = new FormData(event.target);
-
         formData.append("access_key", "3a0883f7-cd78-4779-85f9-1b8d217f12d3");
+        formData.append("h-captcha-response", hcap);
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -58,6 +63,11 @@ const Contact = () => {
                         className="border-1 h-[250px] pt-1 pb-1 pl-2 pr-2 rounded-sm bg-white" 
                         placeholder="Message"
                     ></textarea>
+                    <HCaptcha
+                        sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                        reCaptchaCompat={false}
+                        onVerify={onHCaptchaChange} 
+                    />
                     <button type="submit" className="border">Send</button>
                 </form>
                 <span>{result}</span>
