@@ -69,7 +69,7 @@ const Contact = () => {
                         reCaptchaCompat={false}
                         onVerify={onHCaptchaChange} 
                     />
-                    <button type="submit" className="border">Send</button>
+                    <button type="submit" className="border bg-blue-500 text-white pt-2 pb-2 rounded-md">Send</button>
                 </form>
                 <span>{result}</span>
             </div>

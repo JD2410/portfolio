@@ -5,7 +5,7 @@ const Experience = () => {
         {
             date: "Apr 2024 - Feb 2025",
             title: "Product Manager/Owner",
-            description: "Translated client requirements into actionable plans and coordinated timelines and specifications with the development team. Collaborated with the admin team to align expectations, minimize scope creep, and maintain cohesion between teams. Presented new ideas and development strategies to the company, supporting both project success and long-term growth initiatives.",
+            description: "Translated client requirements into actionable plans and coordinated timelines and specifications with the development team. Collaborated with the admin team to align expectations, minimise scope creep, and maintain cohesion between teams. Presented new ideas and development strategies to the company, supporting both project success and long-term growth initiatives.",
             skills: ["Leadership & Team Development", "Application Scoping & Planning", "Cross-Department Collaboration", "ISO Policy Development & Compliance", "Development Systems Management"]
         },
         {
