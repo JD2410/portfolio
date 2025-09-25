@@ -6,6 +6,9 @@
   --font-outfit: "Outfit", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: url("./assets/background.svg") repeat-y 700px center,
    url("./assets/background.svg") repeat-y top center;

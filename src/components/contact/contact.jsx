@@ -35,7 +35,7 @@ const Contact = () => {
 
     }
     return (
-        <section className="flex flex-col items-center pl-4 sm:pl-0 pr-4 sm:pr-0">
+        <section className="flex flex-col items-center pl-4 sm:pl-0 pr-4 sm:pr-0" id="contactme">
             <h1 className="text-left w-[100%] sm:text-center text-2xl md:text-4xl font-bold mt-5 lg:mt-10 text-gray-900">Get in touch</h1>
             <hr className="hr-underline mt-2 mb-2 sm:mt-5 sm:mb-5 w-[100%] sm:max-w-[220px] rounded-sm" />
             <p className="sm:text-center mb-4 sm:mb-8 sm:pl-2 sm:pr-2 text-gray-700">Methods and ways to get in touch with me, please do and I promise to get back to you!</p>
@@ -47,7 +47,8 @@ const Contact = () => {
                     <div className="flex gap-4 items-center"><FaMapPin size={25} />Essex, United Kingdom</div>
                     <h3 className="text-xl font-bold mb-1 text-left mt-4">The Socials</h3>
                     <div className="flex gap-4 pt-1">
-                        <FaLinkedin size={30} /> <FaGithub size={30} />
+                        <a href="https://www.linkedin.com/in/jonathan-richard-anderson-delves" target="_blank"><FaLinkedin size={30} /></a>
+                        <a href="https://github.com/JD2410" target="_blank"><FaGithub size={30} /></a>
                     </div>
                 </div>
                 <form onSubmit={submitHandler} className="flex flex-col gap-3">

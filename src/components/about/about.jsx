@@ -2,7 +2,7 @@ import profilePicture from "./assets/profile-picture.png"
 import ActionButtons from "../action/action"
 const About = () => {
     return (
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center" id="aboutme">
             <div className="max-w-6xl p-4 sm:grid sm:grid-cols-12 gap-4 content-center items-center ">
                 <div className="lg:col-span-7 sm:col-span-6 self-center">
                     <h1 className="text-left text-2xl md:text-4xl font-bold">About Me</h1>

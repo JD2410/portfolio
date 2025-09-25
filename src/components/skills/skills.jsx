@@ -40,7 +40,7 @@ const Skills = () => {
         ["Product Ownership", Productownership],
     ]
     return (
-        <section className="flex flex-col items-center pl-4 sm:pl-0 pr-4 sm:pr-0">
+        <section className="flex flex-col items-center pl-4 sm:pl-0 pr-4 sm:pr-0" id="skills">
             <h1 className="text-left w-[100%] sm:text-center text-2xl md:text-4xl font-bold mt-5 lg:mt-30 text-gray-900">Skills & Tools</h1>
             <hr className="hr-underline mt-2 mb-2 sm:mt-5 sm:mb-5 w-[100%] sm:max-w-[220px] rounded-sm" />
             <p className="sm:text-center mb-4 sm:mb-8 sm:pl-2 sm:pr-2 text-gray-700">Refined and developed over the years. Here are the languages, skills and tools I know.</p>

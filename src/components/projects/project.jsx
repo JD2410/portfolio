@@ -11,7 +11,7 @@ const project = (prop) => {
                 <p className="leading-[1.8rem] text-gray-700" >{prop.project.description}</p>
                 <div className="flex flex-wrap gap-3 pt-3 pb-3">
                     {typeof(prop.project.website) == "undefined" ? "" : <a href={prop.project.website.url} target="_blank" className={prop.project.website.active ? "bg-blue-500 hover:bg-blue-400 text-white rounded-3xl pt-1 pb-1 pl-3 pr-3" : "bg-gray-500 text-white rounded-3xl pt-1 pb-1 pl-3 pr-3"} title={prop.project.website.active ? "Got to Project" : "Project no longer exits"}>Visit the Website</a>}
-                    {typeof(prop.project.github) == "undefined" ? "" : <a href="#" target="_blank" className="bg-blue-500 hover:bg-blue-400 text-white rounded-3xl pt-1 pb-1 pl-3 pr-3">View GitHub Repo</a>}
+                    {typeof(prop.project.github) == "undefined" ? "" : <a href={prop.project.github}  target="_blank" className="bg-blue-500 hover:bg-blue-400 text-white rounded-3xl pt-1 pb-1 pl-3 pr-3">View GitHub Repo</a>}
                 </div>
                 <h4>Skills and Tools</h4>
                 <ul className="flex flex-wrap gap-3 pt-4">

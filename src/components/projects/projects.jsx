@@ -15,7 +15,7 @@ const Projects = () => {
             description: "For this project, I designed and developed a WordPress website for a father-and-son painting and decorating business. Starting with agreed wireframes, I created a clean, bright design that captured their brand identity. WordPress provided the flexibility for them to update their own content, including galleries and contact details, without relying on ongoing support. To keep the build efficient and easy to maintain, I used SCSS for styling and chose InfinityFree as a cost-effective hosting solution. The contact form was set up with Contact Form 7 and integrated with Brevo to ensure reliable email delivery.",
             skills: ["Wordpress", "ACF", "Wordfence", "Contact From 7", "Web Design", "Responisve Web Design", "Javascript", "HTML", "CSS", "InfinityFree", "Brevo", "DNS Management", "Figma", "Git", "GitHub"],
             website: { 
-                url: "https://www.4thgendecorating.co.uk",
+                url: "https://4thgendecorating.com",
                 active: true
             },
             github: "https://github.com/JD2410/fourth-generation-decoration"
@@ -82,7 +82,7 @@ const Projects = () => {
 
     return (
         <>
-         <section className=" p-4 flex flex-col gap-3 items-center">
+         <section className=" p-4 flex flex-col gap-3 items-center" id='projects'>
             <h1 className="text-center text-4xl font-bold">Projects Personal and Commercial</h1>
             <hr className="hr-underline mt-6 mb-6 w-[100%] lg:max-w-[580px] rounded-sm" />
             <p className="text-center leading-[1.8rem] text-gray-700 pl-2 pr-2">Here are some of the projects I’ve been apart of over the years in either front end development, project management or UI/UX Design aspect. Along with some of my personal projects to sharpen and build my skillset.</p>
