@@ -1,39 +1,10 @@
-import { useState } from "react";
+
 import { FaEnvelope, FaLinkedin, FaGithub, FaMapPin } from "react-icons/fa";
-import HCaptcha from '@hcaptcha/react-hcaptcha';
+import Form from './form'
+
 
 const Contact = () => {
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [result, setResult] = useState("");
-    const [hcap, setHcap] = useState("");
-
-    const onHCaptchaChange = (token) => {
-        setHcap(token);
-    };
-    const submitHandler = async (event) => {
-        event.preventDefault();
-        setResult("Sending....");
-        const formData = new FormData(event.target);
-        formData.append("access_key", "3a0883f7-cd78-4779-85f9-1b8d217f12d3");
-        formData.append("h-captcha-response", hcap);
-
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            setResult("Form Submitted Successfully");
-            event.target.reset();
-        } else {
-            console.log("Error", data);
-            setResult(data.message);
-        }
-
-    }
+    
     return (
         <section className="flex flex-col items-center pl-4 sm:pl-0 pr-4 sm:pr-0" id="contactme">
             <h1 className="text-left w-[100%] sm:text-center text-2xl md:text-4xl font-bold mt-5 lg:mt-10 text-gray-900">Get in touch</h1>
@@ -51,29 +22,9 @@ const Contact = () => {
                         <a href="https://github.com/JD2410" target="_blank"><FaGithub size={30} /></a>
                     </div>
                 </div>
-                <form onSubmit={submitHandler} className="flex flex-col gap-3">
-                    <h3 className="text-2xl font-bold mb-1 text-left">Drop me a line</h3>
-                    <p className="leading-[1.8rem] text-gray-700 mb-3">Fill out the form below and I’ll get back to you asap!</p>
-                    <input 
-                        type="text" 
-                        name="email"
-                        className="border-1 pt-1 pb-1 pl-2 pr-2 mb-3 rounded-sm bg-white" 
-                        placeholder="Email" />
-                    <textarea 
-                        name="message" 
-                        className="border-1 h-[250px] pt-1 pb-1 pl-2 pr-2 rounded-sm bg-white" 
-                        placeholder="Message"
-                    ></textarea>
-                    <HCaptcha
-                        sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
-                        reCaptchaCompat={false}
-                        onVerify={onHCaptchaChange} 
-                    />
-                    <button type="submit" className="border bg-blue-500 text-white pt-2 pb-2 rounded-md">Send</button>
-                </form>
-                <span>{result}</span>
+                <Form />
             </div>
-            
+
         </section>
     )
 }
