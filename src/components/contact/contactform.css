@@ -29,6 +29,16 @@
     button {
         outline: none;
         border: 0px;
+        background-color: oklch(0.623 0.214 259.815002);
+    }
+    button.loading {
+        background-color:oklch(75.845% 0.12463 258.046);
+    }
+    button.success {
+        background-color:oklch(60.854% 0.19777 140.464);
+    }
+    button.error {
+        background-color:oklch(55.398% 0.22734 29.223);
     }
     button:focus {
         transition: box-shadow 0.15s;
@@ -46,6 +56,14 @@
         }
         textarea {
             border-color: red;
+        }
+        .HCaptcha-container {
+            border: 2px solid red;
+            display: inline-block;
+            border-radius: 6px;
+        }
+        .HCaptcha-container + p {
+            margin-top: 5px;
         }
     }
 }
