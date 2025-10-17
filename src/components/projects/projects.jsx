@@ -99,7 +99,7 @@ const Projects = () => {
          <section className=" p-4 flex flex-col gap-3 items-center" id='projects'>
             <h1 className="text-center text-4xl font-bold">Projects Personal and Commercial</h1>
             <hr className="hr-underline mt-6 mb-6 w-[100%] lg:max-w-[580px] rounded-sm" />
-            <p className="text-center leading-[1.8rem] text-gray-700 pl-2 pr-2">Here are some of the projects I’ve been apart of over the years in either front end development, project management or UI/UX Design aspect. Along with some of my personal projects to sharpen and build my skillset.</p>
+            <p className="text-center leading-[1.8rem] text-gray-700 pl-2 pr-2 max-w-6xl">Here are some of the projects I’ve been apart of over the years in either front end development, project management or UI/UX Design aspect. Along with some of my personal projects to sharpen and build my skillset.</p>
             {projectDetails.map((ele, index) => (
                 <ProjectDisplay project={ele} key={index}></ProjectDisplay>
             ))}
