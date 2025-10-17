@@ -18,6 +18,8 @@ const Projects = () => {
                 url: "https://4thgendecorating.com",
                 active: true
             },
+            roles: ["Web Designer", "Front End Developer"],
+            date: "2025",
             github: "https://github.com/JD2410/fourth-generation-decoration"
         },
         {
@@ -29,6 +31,8 @@ const Projects = () => {
                 url: "https://cwbuilding-solutions.co.uk",
                 active: true
             },
+            roles: ["Graphic Designer", "Web Designer", "Front End Developer"],
+            date: "2025",
             github: "https://github.com/JD2410/Christopher-Willliam-Website"
         },
         {
@@ -36,6 +40,8 @@ const Projects = () => {
             image: LabelMaker,
             description: "For a publishing company, I developed a standalone tool to automate the creation of address labels from CSV files directly from the order section of their website. Previously, staff had to re-enter data manually, a time-consuming and error-prone process. The web-based system, hosted locally on their machine, allowed them to upload CSV files, review a summary of the data, and generate formatted labels ready for printing on standard Avery sheets. By removing the need for internet access or third-party tools, this project streamlined a repetitive task, improved accuracy, and delivered a simple, efficient offline solution.",
             skills: ["Web Design", "jQuery", "HTML", "CSS"],
+            roles: ["Front End Developer"],
+            date: "2020",
             github: "https://github.com/JD2410/Address-Label-Generator"
         },
         {
@@ -43,6 +49,8 @@ const Projects = () => {
             image: Ultra,
             description: "Ultra HR was a management tool covering holidays, expenses, reviews, and performance tracking. I began by creating screen designs with the HR team and later acted as the bridge between developers and stakeholders. The first version, built in C#, saw me working on front-end design and UI improvements. A second, modernised version used Angular and a microservices architecture, where I led UI/UX design. I later moved into product ownership, writing technical specifications and working with the CTO to introduce AI features that streamlined performance reviews. Though no longer active, the project was a key learning experience.",
             skills: ["Web Design", "jQuery", "HTML", "CSS"],
+            roles: ["Specification Writer", "UI/UX Designer", "Graphic Designer", "Product Owner", "Front End Developer"],
+            date: "2019 - 2024",
             website: { 
                 url: "#",
                 active: false
@@ -53,6 +61,8 @@ const Projects = () => {
             image: RetailReport,
             description: "Retail Report was a management tool for shopping centres, designed to provide insights and practical tools for day-to-day operations. I began as a front-end developer, building new features, maintaining the codebase, and fixing issues. Over time, I worked with the product manager to design client-specific tools, ensuring requirements were met and workflows were efficient. Later, I shifted into a strategic role, creating product roadmaps, estimating development timelines, and presenting future plans at internal events. I also supported sales and stakeholder discussions by aligning technical feasibility with business goals.",
             skills: ["Leadership", "Team Development", "Application Scoping & Planning", "Cross-Department Collaboration", "ISO Policy Development", "Department System Development", "Web Design", "Responsive Design", "jQuery", "HTML", "CSS"],
+            roles: ["UI/UX Designer", "Product Manager", "Front End Developer"],
+            date: "2019 - 2024",
             website: { 
                 url: "https://retailreport.com",
                 active: true
@@ -63,6 +73,8 @@ const Projects = () => {
             image: Itvet,
             description: "At ITVET, I developed and maintained the company’s marketing website on the WordPress platform, working with the marketing team to optimise usability and SEO. Beyond day-to-day updates, I created a custom plugin that integrated with the Ultra HR recruitment module. This allowed job listings to be published directly on the site, each with its own tailored application form. Applicants could also update submissions post-application, improving the user experience. The project balanced technical development with cross-department collaboration, ensuring the site supported both marketing and HR goals.",
             skills: ["Responsive Design", "Wordpress", "WordPress Plugin Development", "API Integration", "jQuery", "HTML", "CSS"],
+            roles: ["Front End Developer"],
+            date: "2017 - 2021",
             website: { 
                 url: "#",
                 active: false
@@ -77,6 +89,8 @@ const Projects = () => {
                 url: "#",
                 active: false
             },
+            roles: ["Front End Developer"],
+            date: "2010 - 2017",
         }
     ]
 
