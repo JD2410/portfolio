@@ -48,7 +48,7 @@ const Projects = () => {
             name: "Ultra HR - HR Management System",
             image: Ultra,
             description: "Ultra HR was a management tool covering holidays, expenses, reviews, and performance tracking. I began by creating screen designs with the HR team and later acted as the bridge between developers and stakeholders. The first version, built in C#, saw me working on front-end design and UI improvements. A second, modernised version used Angular and a microservices architecture, where I led UI/UX design. I later moved into product ownership, writing technical specifications and working with the CTO to introduce AI features that streamlined performance reviews. Though no longer active, the project was a key learning experience.",
-            skills: ["Web Design", "jQuery", "HTML", "CSS"],
+            skills: ["Web Design", "jQuery", "HTML", "CSS", "Project Management", "Team Management", "Azure DevOps", "SCRUM", "Agile Workflow", "Figma", "Adobe XD", "Adobe Photoshop", "Adobe Illustrator"],
             roles: ["Specification Writer", "UI/UX Designer", "Graphic Designer", "Product Owner", "Front End Developer"],
             date: "2019 - 2024",
             website: { 
@@ -84,7 +84,7 @@ const Projects = () => {
             name: "Horizon Hobby UK",
             image: Horizonhobby,
             description: "At Horizon Hobby UK, I managed the development and maintenance of their flat-file marketing website for premium RC products. I introduced forward-looking practices at the time, such as responsive design and SEO optimisation, ensuring the site kept pace with emerging trends. My role also included building new sections, fixing bugs, and streamlining maintenance. Working with graphic designers, I integrated social media platforms and supported marketing with YouTube sizzle videos. I also implemented Google Analytics to track user journeys and guide future improvements",
-            skills: ["Website Usability, SEO & Browser Compatibility", "Site Testing, Debugging & Error Resolution", "Front-End Development (HTML, CSS, JavaScript)", "jQuery", "Designer & Developer Collaboration"],
+            skills: ["Website Usability", "Front-End Development (HTML, CSS, JavaScript)", "SEO", "Browser Compatibility", "Site Testing", "Debugging & Error Resolution",  "jQuery", "Designer & Developer Collaboration"],
             website: { 
                 url: "#",
                 active: false
