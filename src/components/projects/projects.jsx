@@ -1,3 +1,4 @@
+import "./modal.css"
 import FourthGen from './assets/fourth-gen-decorating.png';
 import Christopher from './assets/christopher-william-building-solutions.png'
 import Ultra from './assets/ultra-hr.png'
@@ -6,6 +7,7 @@ import Itvet from './assets/itvet.png'
 import Horizonhobby from './assets/horizonhobby.png'
 import LabelMaker from './assets/label-maker.png'
 import ProjectDisplay from './project';
+import Modal from "./modal";
 
 const Projects = () => {
     const projectDetails = [
@@ -104,7 +106,9 @@ const Projects = () => {
                 <ProjectDisplay project={ele} key={index}></ProjectDisplay>
             ))}
          </section>
-         
+         <div className='modal'>
+            <Modal project={projectDetails[0]} />
+         </div>
         </>
     )
 }
