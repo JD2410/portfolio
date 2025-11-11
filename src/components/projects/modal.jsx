@@ -1,6 +1,12 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useModal } from '../context/context'
 
 const Modal = (props) => {
+    const { toggleModal } = useModal()
+
+    const turnOff = () => {
+        toggleModal()
+    }
 
     return (
         <>
@@ -11,7 +17,7 @@ const Modal = (props) => {
             <div className="flex-7" >
                 <div className="flex justify-between">
                     <h1 className="text-2xl font-bold text-left mb-1">{props.project.name}</h1>
-                    <div>Close</div>
+                    <div onClick={() => turnOff()}>Close</div>
                 </div>
                 <div className="font-bold">
                     <p><span className="text-[#0972D3]">Project Date:</span> {props.project.date}</p>

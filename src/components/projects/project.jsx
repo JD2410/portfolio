@@ -1,6 +1,15 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useModal } from '../context/context'
 
 const project = (prop) => {
+
+    const { toggleModal, setWhichProject } = useModal()
+
+    const findMore = () => {
+        toggleModal()
+        setWhichProject(prop.projectIndex)
+    }
+
     return (
         <>
         <article className="grid grid-cols-1 sm:grid-cols-12 gap-8 mb-12 items-center max-w-6xl drop-shadow-lg bg-white p-6 text-gray-700 rounded-xl">
@@ -27,7 +36,7 @@ const project = (prop) => {
                 <p className="font-bold whitespace-nowrap overflow-hidden text-ellipsis"><span className="text-[#0972D3]">Roles:</span> {prop.project.roles.map((ele,index) => (index == 0 ? ele : ', ' + ele ))}</p>
                 <div className="flex justify-between font-bold">
                     <p><span className="text-[#0972D3]">Project Date:</span> {prop.project.date}</p>
-                    <div className="text-[#0972D3]">FIND OUT MORE &gt;&gt;</div>
+                    <div className="text-[#0972D3]" onClick={() => findMore()}>FIND OUT MORE &gt;&gt;</div>
                 </div>
             </div>
         </article>

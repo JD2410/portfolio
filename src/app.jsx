@@ -14,14 +14,14 @@ const Porfolio = () => {
     
     return(
         <div className={modalOpen ? "modal-open" : "modal-closed"}>
-        <Header />
-        <Hero />
-        <Skills />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
+            <Header />
+            <Hero />
+            <Skills />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
+            <Footer />
         </div>
     )
 }

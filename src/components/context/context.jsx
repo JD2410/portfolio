@@ -4,11 +4,12 @@ const ProjectContext = createContext(undefined)
 
 export const ProjectProvider = ({ children }) => {
 
-    const [modalOpen, setModalOpen] = useState(true)
+    const [modalOpen, setModalOpen] = useState(false)
+    const [whichProject, setWhichProject] = useState(0)
     const toggleModal = () => setModalOpen(prev => (prev ? false : true))
 
     return (
-        <ProjectContext.Provider value={{modalOpen, toggleModal}}>
+        <ProjectContext.Provider value={{modalOpen, toggleModal, whichProject, setWhichProject}}>
             {children}
         </ProjectContext.Provider>
     )
