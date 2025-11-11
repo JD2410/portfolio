@@ -69,22 +69,3 @@
     width: 30px;
     top: 10px;
 }
-/* @media (min-width: 768px) {
-    .timeline-indi.hhuk { 
-        left: calc(50% - 15px);
-    }
-    .timeline-indi { 
-        left: calc(50% - 15px);
-    }
-    .experience-list:after {
-        content: "";
-        width: 3px;
-        background-color: rgb(41, 41, 41);
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        display: block;
-        z-index: 0;
-    }
-} */
