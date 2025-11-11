@@ -10,9 +10,9 @@ const Modal = (props) => {
 
     return (
         <>
-        <div className="bg-white rounded-2xl shadow-xl max-h-[70vh] max-w-[80%] w-[100%] flex gap-6 p-6">
-            <div className="flex-4">
-                <img src={props.project.image} alt="" className='shadow-sm rounded-md' />
+        <div className="bg-white rounded-2xl shadow-xl max-w-[1200px] w-[100%] flex gap-6 p-6 overflow-auto">
+            <div className="flex-5">
+                <img src={props.project.image} alt={props.project.name} className='shadow-sm rounded-md' />
             </div>
             <div className="flex-7" >
                 <div className="flex justify-between">
