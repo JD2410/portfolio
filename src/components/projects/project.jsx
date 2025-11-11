@@ -20,10 +20,11 @@ const project = (prop) => {
                 <div className="flex justify-between">
                     <h3 className="text-2xl font-bold text-left mb-1">{prop.project.name}</h3>
                     <div className="flex gap-1">
-                        {typeof(prop.project.website) == "undefined" ? "" : <a href={prop.project.website.url} 
-                                                                                target="_blank" 
-                                                                                className={`rounded-3xl w-[35px] h=[35px] flex justify-center items-center ${prop.project.website.active ? "bg-[#0972D3] hover:bg-blue-400 text-white" : "bg-gray-500 text-white opacity-35"}`} 
-                                                                                title={prop.project.website.active ? "Got to Project" : "Project no longer exits"}><FaExternalLinkAlt /></a>}
+                        {typeof(prop.project.website) == "undefined" ? "" : 
+                            <a href={prop.project.website.url} 
+                                    target="_blank" 
+                                    className={`rounded-3xl w-[35px] h=[35px] flex justify-center items-center ${prop.project.website.active ? "bg-[#0972D3] hover:bg-blue-400 text-white" : "bg-gray-500 text-white opacity-35"}`} 
+                                    title={prop.project.website.active ? "Got to Project" : "Project no longer exits"}><FaExternalLinkAlt /></a>}
                         {typeof(prop.project.github) == "undefined" ? "" : <a href={prop.project.github} target="_blank" className="bg-[#0972D3] hover:bg-blue-400 text-white text-[20px] rounded-3xl w-[35px] h=[35px] flex justify-center items-center"><FaGithub /></a>}
                     </div>
                 </div>
@@ -36,7 +37,7 @@ const project = (prop) => {
                 <p className="font-bold whitespace-nowrap overflow-hidden text-ellipsis"><span className="text-[#0972D3]">Roles:</span> {prop.project.roles.map((ele,index) => (index == 0 ? ele : ', ' + ele ))}</p>
                 <div className="flex justify-between font-bold">
                     <p><span className="text-[#0972D3]">Project Date:</span> {prop.project.date}</p>
-                    <div className="text-[#0972D3]" onClick={() => findMore()}>FIND OUT MORE &gt;&gt;</div>
+                    <div className="text-[#0972D3] cursor-pointer hover:underline" onClick={() => findMore()}>FIND OUT MORE &gt;&gt;</div>
                 </div>
             </div>
         </article>

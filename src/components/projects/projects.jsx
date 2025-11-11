@@ -12,7 +12,7 @@ import { useModal } from '../context/context'
 
 const Projects = () => {
 
-    const { modalOpen, whichProject } = useModal()
+    const { modalOpen, whichProject, toggleModal } = useModal()
     
     const projectDetails = [
         {
@@ -110,7 +110,7 @@ const Projects = () => {
                 <ProjectDisplay project={ele} projectIndex={index} key={index}></ProjectDisplay>
             ))}
          </section>
-         <div className={"modal " + (!modalOpen ? ' closed' : ' open')}>
+         <div className={"modal " + (!modalOpen ? ' closed' : ' open')} onClick={toggleModal}>
             <Modal project={projectDetails[whichProject]} />
          </div>
         </>
