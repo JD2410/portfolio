@@ -8,8 +8,12 @@ import Horizonhobby from './assets/horizonhobby.png'
 import LabelMaker from './assets/label-maker.png'
 import ProjectDisplay from './project';
 import Modal from "./modal";
+import { useState } from "react";
 
 const Projects = () => {
+    const [modalOpen, setmodalOpen] = useState(false)
+    const [whichProject, setWhichProject] = useState(2)
+    
     const projectDetails = [
         {
             name: "4th Generation Decorating",
@@ -102,12 +106,13 @@ const Projects = () => {
             <h1 className="text-center text-4xl font-bold">Projects Personal and Commercial</h1>
             <hr className="hr-underline mt-6 mb-6 w-[100%] lg:max-w-[580px] rounded-sm" />
             <p className="text-center leading-[1.8rem] text-gray-700 pl-2 pr-2 max-w-6xl">Here are some of the projects I’ve been apart of over the years in either front end development, project management or UI/UX Design aspect. Along with some of my personal projects to sharpen and build my skillset.</p>
+            {whichProject}
             {projectDetails.map((ele, index) => (
                 <ProjectDisplay project={ele} key={index}></ProjectDisplay>
             ))}
          </section>
-         <div className='modal'>
-            <Modal project={projectDetails[0]} />
+         <div className={"modal " + (!modalOpen ? ' closed' : ' open')}>
+            <Modal project={projectDetails[whichProject]} />
          </div>
         </>
     )

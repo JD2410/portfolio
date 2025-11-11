@@ -1,6 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Modal = (props) => {
+
     return (
         <>
         <div className="bg-white rounded-2xl shadow-xl max-h-[70vh] max-w-[80%] w-[100%] flex gap-6 p-6">
@@ -8,7 +9,10 @@ const Modal = (props) => {
                 <img src={props.project.image} alt="" className='shadow-sm rounded-md' />
             </div>
             <div className="flex-7" >
-                <h1 className="text-2xl font-bold text-left mb-1">{props.project.name}</h1>
+                <div className="flex justify-between">
+                    <h1 className="text-2xl font-bold text-left mb-1">{props.project.name}</h1>
+                    <div>Close</div>
+                </div>
                 <div className="font-bold">
                     <p><span className="text-[#0972D3]">Project Date:</span> {props.project.date}</p>
                     <p className="font-bold"><span className="text-[#0972D3]">Roles:</span> {props.project.roles.map((ele,index) => (index == 0 ? ele : ', ' + ele ))}</p>
